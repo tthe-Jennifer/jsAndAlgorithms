@@ -1,0 +1,87 @@
+body {
+  background-image: url(/Users/jenniferchimuanyaejike/Training/laptop-3087585__340.jpeg);
+  padding: 20px;
+}
+form {
+  width: 80%;
+  height: auto;
+  margin: 20px;
+  background-color: burlywood;
+  opacity: .9;
+  color: #71808e;
+  font-family: Tahoma;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+/*#f5f6f7*/
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+/*survey-form {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}*/
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 99%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #f1f1f6;
+  border: 1px solid #eeeef5;
+  color: #2e2c2c;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #24cd6d;
+  border-color: white;
+  min-width: 300px;
+}
+input[type="file"] {
+  padding: 1px 2px;
+}

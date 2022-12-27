@@ -1,0 +1,57 @@
+.nav-link {
+    
+    margin-left: 50px;
+}
+
+#nav-bar {
+    display:block;
+}
+
+#nav-link1 {
+    margin-left: 1200px;
+    text-align:right;
+}
+
+#info, li {
+    margin-left: 500px;
+    margin-right: 500px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 50px;
+
+}
+
+#email {
+    margin-right: 10px;
+}
+#info {
+    margin-bottom: 50px;
+}
+
+#features, #How_It_works, #pricing {
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 720px) {
+    .image-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .text-with-images {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 420px) {
+    .hero-title {
+      font-size: 4.5rem;
+    }
+  }

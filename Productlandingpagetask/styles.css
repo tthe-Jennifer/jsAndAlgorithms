@@ -1,0 +1,107 @@
+a:link, a:visited, a:hover, a:active, a:link, a:visited, a:hover, a:active::before, a:link, a:visited, a:hover, a:active::after {
+    text-decoration: none;
+          color: black;
+    
+}
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 99%;
+    top: 0;
+    left: 0;
+    background-color: #4700cc;
+    color: white;
+    padding: 1em;
+    z-index: 9999;
+  }
+@media all and (max-width: 390px) {
+    body {
+        font-size: 10px;
+    }
+    #nav-bar {
+        text-align: right;
+        padding-left: 30%;
+    }
+
+    #submit {
+        justify-content: center;
+        margin-top: 2px;
+    }
+    input {
+        margin-left: 10px;
+    }
+}
+#info, li {
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    
+}
+
+.pricing2 {
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 30%;
+    border: solid #5bcd79 1px;
+    padding: 5px;
+    
+}
+
+.pricing3 {
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 30%;
+    border: solid #5bcd79 1px;
+    padding: 5px;
+}
+
+.pricing1 {
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 30%;
+    border: solid #5bcd79 1px;
+    padding: 5px;
+}
+
+h3 {
+    margin-bottom: 20%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+input {
+    width: 50%;
+    font-size: 10px;
+    cursor: pointer;
+}
+button {font-size: 10px;
+margin-top: 5px;}
+
+iframe {
+    width: 90%;
+    justify-content: center;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+#pricing {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #5bcd79 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
