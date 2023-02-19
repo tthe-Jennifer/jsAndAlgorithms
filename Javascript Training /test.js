@@ -97,3 +97,103 @@ function phoneticLookup(val) {
   }
   //Print result
   console.log(phoneticLookup("charlie"));
+
+  function checkObj(obj, checkProp) {
+    // Only change code below this line
+     if(obj.hasOwnProperty(checkProp)){
+       return obj[checkProp];
+       }
+       else{ return "Not Found"; }
+    // Only change code above this line
+  }
+
+  console.log(checkObj)
+
+  const myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
+    }
+  };
+
+  const gloveBoxContents = console.log(myStorage.car.inside["glove box"]);
+
+  function multiplyAll(arr) {
+    let product = 1;
+    // Only change code below this line
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      product *= (arr[i][j]);
+    }
+  }
+    // Only change code above this line
+    return product;
+  }
+  
+  console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]]));
+
+const ourArray = []; 
+let i = 5;
+
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+
+// Change the while loop in the code to a do...while loop so the loop will push only the number 10 to myArray, and i will be equal to 11 when your code has finished running.
+// Setup
+const myArray = [];
+let f = 10;
+
+// Only change code below this line
+do {
+  myArray.push(f);
+  f++; 
+}
+while (f < 5);
+
+console.log(myArray);
+
+// Write a recursive function, sum(arr, n), that returns the sum of the first n elements of an array arr.
+function sum(arr, n) {
+  // Only change code below this line
+if (n <= 0) {
+  return 0;
+} else { 
+  return sum(arr, n - 1) + arr[n - 1];
+}
+  // Only change code above this line
+}
+
+// Example:
+//Replace Loops using Recursion
+// Recursion is the concept that a function can be expressed in terms of itself. To help understand this, start by thinking about the following task: multiply the first n elements of an array to create the product of those elements. Using a for loop, you could do this:
+
+  function multiply(arr, n) {
+    let product = 1;
+    for (let i = 0; i < n; i++) {
+      product *= arr[i];
+    }
+    return product;
+  }
+// However, notice that multiply(arr, n) == multiply(arr, n - 1) * arr[n - 1]. That means you can rewrite multiply in terms of itself and never need to use a loop.
+
+  function multiply(arr, n) {
+    if (n <= 0) {
+      return 1;
+    } else {
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+  }
+
+// default function parameters
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
